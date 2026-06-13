@@ -1,27 +1,19 @@
 def search(ls, find):
-    l = len(ls)
-    if l <=3:
-        for i in range(i):
-            if ls[i] == find:
-                return(i)
-        return(-1)        
-    now = round(l / 2) - 1
-    previous = 0
+    l = 0
+    h = len(ls) - 1
     last_find = -1
-    
-    while (now != previous):
-        if (ls[now] >= find):
-            if ls[now] == find:
-                last_find = now
-            temp = now
-            now =now - round((abs(now - previous) / 2))
-            previous = temp
+    while h - 1> l:
+        if ls[l + int((h - l) /2)] >= find:
+            if (ls[l + int((h - l) /2)] == find):
+                last_find = l + int((h - l) /2)
+            h = h - int((h - l )/2) - 1
         else:
-            temp = now
-            now =now + round((abs(now - previous) / 2))
-            previous = temp
+            l = l + int((h - l) /2)
+    if (ls[h] == find):
+        last_find = h
+    if (ls[l] == find):
+        last_find = l
     return last_find
-
 
 a = int(input())
 ls = list(map(int, input().split()))
