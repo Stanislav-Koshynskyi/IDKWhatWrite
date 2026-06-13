@@ -1,7 +1,7 @@
 def search(ls, find):
     l = len(ls)
     if l <=3:
-        for i in range(3):
+        for i in range(i):
             if ls[i] == find:
                 return(i)
         return(-1)        
