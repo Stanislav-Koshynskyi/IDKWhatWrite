@@ -1,7 +1,7 @@
 a = int(input())
 ls = list(map(int,input().split()))
 
-max_sum = 0
+max_sum = -1 - (10**4)
 current_sum = 0
 max_start = 0
 max_end = 0
