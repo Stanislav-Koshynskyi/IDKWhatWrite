@@ -1,0 +1,53 @@
+# --- Python ---
+# Байт-код
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# --- Java ---
+# Файли збірки Maven / Gradle
+target/
+.gradle/
+build/
+bin/
+
+# Локальні налаштування IDE
+.classpath
+.project
+.settings/
+.metadata/
+*.launch
+.sts4-cache/
+
+# Скомпільовані файли Java (якщо раптом потрапили до теки вихідного коду)
+*.class
+
+# Файли упакування
+*.jar
+*.war
+*.ear
+*.par
+
+# --- Операційні системи та IDE ---
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# JetBrains (IntelliJ IDEA, PyCharm, WebStorm тощо)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+.history
+*.code-workspace
